@@ -1,0 +1,7 @@
+#!ipxe
+
+set iso-url http://146.103.121.27/esxi-auto.iso
+
+kernel http://boot.ipxe.org/memdisk iso raw
+initrd ${iso-url}
+boot
